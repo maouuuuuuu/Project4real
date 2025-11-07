@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec5bf19914386f64fa2ab15175e07554, type: 3}
+  m_Name: Mau 2
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDefinition
+  Id: mau2
+  CharacterName: Mau 2
+  modelPrefab: {fileID: 2543655418670768497, guid: 072693c88d87f3145aa4b3b0159af89c, type: 3}
+  weapon: {fileID: 11400000, guid: bf109af1600048e46ba5a7453fa10793, type: 2}
+  talents:
+  - {fileID: 11400000, guid: 2239a0c5044127b4f9c6e35a4977c450, type: 2}

@@ -1,0 +1,40 @@
+# --- Unity basics ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild*/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+*.pidb
+*.suo
+*.user
+*.userprefs
+
+# Cache & package noise
+Library/PackageCache/
+Library/ScriptAssemblies/
+Library/Artifacts/
+Library/ShaderCache/
+
+# OS crap
+.DS_Store
+Thumbs.db
+
+# Rider/VS/VSCode
+.idea/
+.vs/
+.vscode/
+
+# Crash dumps
+*.stacktrace
+
+# Gradle/Android
+.gradle/
+*.apk
+*.aab
+
+# Keep these tracked (important for Unity project config)
+!Assets/
+!Packages/
+!ProjectSettings/

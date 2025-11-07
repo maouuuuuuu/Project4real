@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e83b6a58c4c9a1441bb19fddf033621d, type: 3}
+  m_Name: TalentCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::TalentCatalog
+  talents:
+  - {fileID: 11400000, guid: 830948627d4de4644a2d61802f054a0e, type: 2}
+  - {fileID: 11400000, guid: 363ee352b055e6d4891d17c750013789, type: 2}
+  - {fileID: 11400000, guid: 60f14c3c7595cd44180ec12d82fd37a5, type: 2}
+  - {fileID: 11400000, guid: 120c6307001b7934a8e33467f353061b, type: 2}
+  - {fileID: 11400000, guid: 3cde10c2ef5b65348989f626390fb72f, type: 2}
+  - {fileID: 11400000, guid: 16c47f10b5f562142900738380069b1e, type: 2}
+  - {fileID: 11400000, guid: b990c1330ac65634084790aa5f5811b9, type: 2}
+  - {fileID: 11400000, guid: 2239a0c5044127b4f9c6e35a4977c450, type: 2}
+  - {fileID: 11400000, guid: 522d5e58995946d4eaec772417223f3f, type: 2}

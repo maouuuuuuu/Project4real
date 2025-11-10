@@ -27,16 +27,17 @@ public class BattleSpawner : MonoBehaviour
 
         _teamASlots = CollectOrderedSlots(teamAParent);
         _teamBSlots = CollectOrderedSlots(teamBParent);
+
+        if (_teamASlots.Count == 0) Debug.LogError("[BattleSpawner] No Team A slots found.");
+        if (_teamBSlots.Count == 0) Debug.LogError("[BattleSpawner] No Team B slots found.");
     }
 
     void Start()
     {
         var boot = Bootstrapper.Instance;
-        if (!boot)
-        {
-            Debug.LogError("[BattleSpawner] No Bootstrapper found.");
-            return;
-        }
+        if (!boot) { Debug.LogError("[BattleSpawner] No Bootstrapper found."); return; }
+
+        Debug.Log($"[BattleSpawner] TeamA={boot.teamA?.Count ?? 0} slots={_teamASlots.Count} | TeamB={boot.teamB?.Count ?? 0} slots={_teamBSlots.Count}");
 
         SpawnTeam(boot.teamA, _teamASlots, "A");
         SpawnTeam(boot.teamB, _teamBSlots, "B");
@@ -106,9 +107,27 @@ public class BattleSpawner : MonoBehaviour
 
             var go = Instantiate(character.modelPrefab, slot.position, slot.rotation, slot);
             go.name = $"{character.CharacterName}_Team{label}_{i + 1}";
+
+            // 1) ensure runtime first
+            var rt = go.GetComponent<CharacterRuntime>();
+            if (!rt) rt = go.AddComponent<CharacterRuntime>();
+            rt.Init(character, label == "A" ? Team.TeamA : Team.TeamB);
+
+            // 2) then add movement (idempotent)
+            if (!go.GetComponent<CharacterMovement>())
+                go.AddComponent<CharacterMovement>();
         }
 
         if (team.Count > slots.Count)
             Debug.LogWarning($"[BattleSpawner] Team {label} has {team.Count} members but only {slots.Count} slots. Extra members were not spawned.");
     }
+    public void OnStartButtonPressed(GameObject buttonToDestroy)
+    {
+        var all = FindObjectsOfType<CharacterRuntime>(includeInactive: false);
+        for (int i = 0; i < all.Length; i++)
+            all[i].status = RuntimeStatus.Active;
+
+        if (buttonToDestroy) Destroy(buttonToDestroy);
+    }
+
 }

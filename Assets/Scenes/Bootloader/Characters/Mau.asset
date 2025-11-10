@@ -18,3 +18,13 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: bf109af1600048e46ba5a7453fa10793, type: 2}
   talents:
   - {fileID: 11400000, guid: 60f14c3c7595cd44180ec12d82fd37a5, type: 2}
+  Characterstats:
+    hp: 100
+    atk: 10
+    def: 10
+    spd: 10
+    dex: 10
+    int: 10
+    mana: 10
+    wis: 10
+    foc: 10

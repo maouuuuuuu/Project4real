@@ -15,6 +15,16 @@ MonoBehaviour:
   Id: chat
   CharacterName: 'Chat '
   modelPrefab: {fileID: 2543655418670768497, guid: 072693c88d87f3145aa4b3b0159af89c, type: 3}
-  weapon: {fileID: 11400000, guid: bf109af1600048e46ba5a7453fa10793, type: 2}
+  weapon: {fileID: 11400000, guid: f78e50c4533fcbc4b990bd8afc1bb7cf, type: 2}
   talents:
   - {fileID: 11400000, guid: 363ee352b055e6d4891d17c750013789, type: 2}
+  Characterstats:
+    hp: 100
+    atk: 10
+    def: 10
+    spd: 10
+    dex: 10
+    int: 10
+    mana: 10
+    wis: 10
+    foc: 10

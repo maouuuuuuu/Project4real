@@ -14,4 +14,8 @@ public class CharacterDefinition : ScriptableObject
     [Header("Loadout (direct refs)")]
     public WeaponDefinition weapon;                 // direct reference
     public List<TalentDefinition> talents = new();  // direct references
+
+    [Header("Stats")]
+    public Stats Characterstats = new Stats();
+
 }

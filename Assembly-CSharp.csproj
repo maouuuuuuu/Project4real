@@ -64,13 +64,17 @@
     <Compile Include="Assets\Scenes\Bootloader\Weapons\WeaponCatalog.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Talents\TalentCatalog.cs" />
     <Compile Include="Assets\Scenes\Story\CharacterEntry.cs" />
+    <Compile Include="Assets\Scenes\Battle\CharacterMovement.cs" />
+    <Compile Include="Assets\Scenes\Battle\CharacterRuntime.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Characters\CharacterCatalog.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Characters\CharacterDefinition.cs" />
+    <Compile Include="Assets\Scenes\Battle\CharacterAttack.cs" />
     <Compile Include="Assets\Scenes\Battle\BattleSpawner.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Talents\TalentDefinition.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Weapons\WeaponDefinition.cs" />
     <Compile Include="Assets\Scenes\Story\StorySceneController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scenes\Bootloader\Weapons\Projectile.cs" />
     <Compile Include="Assets\Scenes\Bootloader\Bootstrapper.cs" />
   </ItemGroup>
   <ItemGroup>

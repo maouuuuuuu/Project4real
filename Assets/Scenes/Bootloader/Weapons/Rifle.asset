@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ea759c4fffb7e42b30d5faa1751161, type: 3}
   m_Name: Rifle
   m_EditorClassIdentifier: Assembly-CSharp::WeaponDefinition
-  weaponName: 
+  weaponName: Rifle
   Id: Rifle
   type: 0
   weaponClass: 1
-  attackPrefab: {fileID: 0}
-  hitVfxPrefab: {fileID: 0}
-  range: 10
+  attackPrefab: {fileID: 4008627560197554066, guid: 2543f2ee015dd74459c1000cbe95f476, type: 3}
+  range: 20
   aim: 0.194
-  projectileSpeed: 12
-  projectileLifetime: 4
-  stats:
+  projectileSpeed: 23
+  projectileLifetime: 5
+  attackCooldown: 5
+  castingTime: 0
+  Weaponstats:
+    hp: 0
     atk: 0
     def: 0
     spd: 0

@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ea759c4fffb7e42b30d5faa1751161, type: 3}
   m_Name: Staff
   m_EditorClassIdentifier: Assembly-CSharp::WeaponDefinition
-  weaponName: 
+  weaponName: Staff
   Id: Staff
   type: 0
   weaponClass: 0
   attackPrefab: {fileID: 0}
-  hitVfxPrefab: {fileID: 0}
   range: 12
   aim: 1
   projectileSpeed: 10
   projectileLifetime: 6
-  stats:
+  attackCooldown: 1
+  castingTime: 0
+  Weaponstats:
+    hp: 0
     atk: 0
     def: 0
     spd: 0
